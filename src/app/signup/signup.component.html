@@ -1,0 +1,18 @@
+<div class="container">
+        
+    <div class="container-sm col-sm-4">
+        <div class="title">
+            <h5>SIGN UP</h5>
+        </div>
+        <form id="form-data"  (submit)="submitData(user.value,password.value,$event)"   >
+            <label for="user" class="form-label">Username</label>
+            <input type="text" class="form-control" name="user" #user>
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" #password >
+            <div class="button-center">
+                <input type="submit" class="btn btn-primary" value="save">
+            </div>
+        </form>
+    </div>
+    <div class="toast-body message">{{this.mess.message}}</div>
+</div>
